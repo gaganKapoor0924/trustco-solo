@@ -76,6 +76,9 @@ body{
     max-width:709px;
     width: 100%;
 }
+.content-banner .mobile-image{
+    display: none;
+}
 .content-banner .title{
     font-size: 64px;
     color:#12141D;
@@ -125,4 +128,65 @@ body{
 .hero-section .content .image_box.right{
     order:3;
 }
+.partners-section{
+    background: #ffffff;
+    padding:55px 0;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.partners-section .partner-logos{
+    width:90%;
+    display: flex;
+    gap:64px;
+    justify-content: center;
+}
+.partners-section .partner-logos ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap:64px;
+}
 
+
+@media screen and (min-width:360px) and (max-width:992px){
+    .wrapper .menu ul{
+        display: none;
+    }
+    .wrapper .action-btn{
+        display: none;
+    }
+    .hero-section{
+        height: auto;
+        padding:40px 20px;
+    }
+    .hero-section .content{
+        width: 100%;
+        flex-direction: column;
+    }
+    .hero-section .content .content-banner{
+        order:1;
+    }
+    .hero-section .content .image_box{
+        display: none;
+    }
+    .hero-section .content .content-banner .title{
+        font-size: 36px;
+    }
+    .hero-section .content .content-banner .button-action{
+        flex-direction: column;
+    }
+    .hero-section .content .content-banner .button-action .btn-started{
+        width: 150px;
+        margin:0 auto;
+    }
+    .hero-section .content .content-banner .button-action .btn-video{
+        width:245px;
+        margin: 0 auto;
+    }
+    .content-banner .mobile-image{
+        display: block;
+        margin-top: 60px;
+    }
+   
+}
