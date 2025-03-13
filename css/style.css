@@ -228,6 +228,64 @@ body {
 
 }
 
+.beneficial-elements {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    background: white;
+}
+
+.beneficial-elements .benefits {
+    width: 75%;
+    display: flex;
+    gap: 64px;
+}
+
+.beneficial-elements .benefits .elements span {
+    background: #043A53;
+    padding: 4px 24px;
+    border-radius: 100px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    display: inline-block;
+}
+
+.beneficial-elements .benefits .elements h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #12141D;
+    margin-bottom: 32px;
+}
+.beneficial-elements .benefits .elements p{
+    font-size: 20px;
+    color:#12141D;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.beneficial-elements .benefits .features ul{
+    list-style-type: none;
+    display: flex;
+    gap:16px;
+}
+.beneficial-elements .benefits .features ul li .feature-box{
+    background: #F2F5F6;
+    padding:32px 24px;
+}
+.beneficial-elements .benefits .features ul li .feature-box h3{
+    margin-top: 32px;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.beneficial-elements .benefits .features ul li .feature-box p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
 @media screen and (min-width:993px) and (max-width:1199px) {
     .partners-section .partner-logos {
         flex-direction: column;
@@ -319,8 +377,9 @@ body {
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    .video-section{
-        padding:50px 0 0;
+
+    .video-section {
+        padding: 50px 0 0;
     }
 
     .video-section .video_info {
@@ -336,9 +395,34 @@ body {
         width: 100%;
         font-size: 30px;
     }
-    .video-section .video_info .video-container p{
+
+    .video-section .video_info .video-container p {
         width: 100%;
         padding-top: 16px;
     }
-
+    .beneficial-elements{
+        padding:50px 0;
+    }
+    .beneficial-elements .benefits{
+        width:100%;
+        padding:0 20px;
+        gap:32px;
+        flex-direction: column;
+    }
+    .beneficial-elements .benefits .features ul{
+        flex-direction: column;
+    }
+    .beneficial-elements .benefits .elements{
+        text-align: center;
+    }
+    .beneficial-elements .benefits .elements span{
+        margin-bottom: 16px;
+    }
+    .beneficial-elements .benefits .elements h2{
+        font-size: 30px;
+        margin-bottom: 16px;
+    }
+    .beneficial-elements .benefits .elements p{
+        font-size: 14px;
+    }
 }
