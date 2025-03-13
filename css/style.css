@@ -296,10 +296,11 @@ body {
     width: 100%;
     height: 100%;
     align-items: center;
-    order:2;
+    order:3;
 }
 .bridges-content{
     width: 40%;
+    padding-right: 70px;
 
 }
 .bridges-content h2{
@@ -355,7 +356,69 @@ body {
     color:#404040;
     padding-top: 16px;
 }
-
+.meet-founder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    order:2;
+}
+.founder-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.founder-section .meet{
+    flex:1;
+    padding-left: 150px;
+    
+}
+.founder-section .meet h2{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.founder-section .meet p{
+    font-size: 24px;
+    color:#12141D;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+.founder-info h3{
+    font-size: 20px;
+    font-weight: 700;
+    color:#12141D;
+}
+.founder-info h3 span{
+    display: block;
+    color:#404040;
+    font-size: 16px;
+    font-weight: 400;
+}
+.success-btn{
+    margin-top: 64px;
+}
+.success{
+        background: #043A53;
+        padding:18px 16px 18px 24px;
+        border-radius: 55px;
+        display: flex;
+        align-items: center;
+        border:none;
+        color:#fff;
+        font-size: 18px;
+        font-weight: 700;
+        gap:25px;
+        margin-top: 32px;
+        cursor: pointer;
+}
+.founder-section .profile-image{
+    width: 50%;
+}
+.profile-image img{
+    width: 100%;
+}
 @media screen and (min-width:1200px) and (max-width:1300px){
     .content-banner .title{
         font-size: 62px;
@@ -558,5 +621,27 @@ body {
     }
     .number-section .numbers .step span{
         font-size: 16px;
+    }
+    .founder-section{
+        padding:20px;
+        flex-direction: column;
+    }
+    .founder-section .meet{
+        padding-left: 0;
+        text-align: center;
+    }
+    .founder-section .meet h2{
+        font-size: 30px;
+        margin-bottom: 16px;
+    }
+    .founder-section .meet p{
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .success-btn{
+        margin-top: 32px;
+    }
+    .founder-section .profile-image{
+        width: 100%;
     }
 }
