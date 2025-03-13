@@ -51,6 +51,9 @@ body{
     background:#043A53;
     color:white;
 }
+.wrapper .hamburger_icon{
+    display: none;
+}
 
 .hero-section{
     width:100%;
@@ -176,6 +179,9 @@ body{
     .wrapper .action-btn{
         display: none;
     }
+    .wrapper .hamburger_icon{
+        display: block ;
+    }
     .hero-section{
         height: auto;
         padding:40px 20px;
@@ -192,8 +198,14 @@ body{
     }
     .hero-section .content .content-banner .title{
         font-size: 36px;
+        font-weight: 700;
     }
-    .hero-section .content .content-banner .button-action{
+    .hero-section .content .content-banner p{
+        font-size:14px;
+        font-weight: 500;
+        padding:16px 0 0;
+    }   
+     .hero-section .content .content-banner .button-action{
         flex-direction: column;
     }
     .hero-section .content .content-banner .button-action .btn-started{
