@@ -285,6 +285,10 @@ body {
     font-weight: 400;
     line-height: 1.5;
 }
+.main-sections{
+    display: flex;
+    flex-direction: column;
+}
 .building-bridges{
     background: white;
     display: flex;
@@ -292,6 +296,7 @@ body {
     width: 100%;
     height: 100%;
     align-items: center;
+    order:2;
 }
 .bridges-content{
     width: 40%;
@@ -324,6 +329,31 @@ body {
     gap:25px;
     margin-top: 32px;
     cursor: pointer;
+}
+.number-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding:100px 0;
+    background: #fff;
+    order:1;
+}
+.number-section .numbers{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.number-section .numbers .step{
+    font-size: 60px;
+    color:#043A53;
+    font-weight: 700;
+    text-align: center;
+}
+.number-section .numbers .step span{
+    display: block;
+    font-size: 24px;
+    color:#404040;
+    padding-top: 16px;
 }
 
 @media screen and (min-width:1200px) and (max-width:1300px){
@@ -483,6 +513,7 @@ body {
     }
     .building-bridges{
         flex-direction: column;
+        order:1;
     }
     .building-bridges .bridges-image{
         order:2;
@@ -510,5 +541,22 @@ body {
     }
     .reports{
         margin-top: 0;
+    }
+    .number-section{
+        padding:50px 0;
+        order:2;
+    }
+    .number-section .numbers{
+        width: 100%;
+        padding:0 20px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:32px;
+    }
+    .number-section .numbers .step{
+        font-size: 36px;
+    }
+    .number-section .numbers .step span{
+        font-size: 16px;
     }
 }
