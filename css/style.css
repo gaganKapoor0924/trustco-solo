@@ -140,6 +140,11 @@ body{
     display: flex;
     gap:64px;
     justify-content: center;
+    align-items: center;
+}
+.partner-logos h2{
+    font-size: 16px;
+    font-weight: 500;
 }
 .partners-section .partner-logos ul{
     list-style-type: none;
@@ -148,6 +153,21 @@ body{
     gap:64px;
 }
 
+
+@media screen and (min-width:993px) and (max-width:1199px){
+    .partners-section .partner-logos{
+        flex-direction: column;
+        gap:20px;
+    }
+    .partners-section .partner-logos h2{
+        text-align: center;
+    }
+   .partners-section .partner-logos ul{
+    gap:24px;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   }
+}
 
 @media screen and (min-width:360px) and (max-width:992px){
     .wrapper .menu ul{
@@ -188,5 +208,15 @@ body{
         display: block;
         margin-top: 60px;
     }
-   
+    .partners-section .partner-logos{
+        flex-direction: column;
+    }
+    .partners-section .partner-logos h2{
+        text-align: center;
+    }
+   .partners-section .partner-logos ul{
+    gap:24px;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   }
 }
