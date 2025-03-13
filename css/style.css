@@ -285,6 +285,61 @@ body {
     font-weight: 400;
     line-height: 1.5;
 }
+.building-bridges{
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.bridges-content{
+    width: 40%;
+
+}
+.bridges-content h2{
+    font-size: 60px;
+    font-weight: 700;
+    padding-bottom:32px;
+}
+.bridges-content h2 span{
+    color:#92A7B0;
+
+}
+.bridges-content p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.reports{
+    background: #043A53;
+    padding:18px 16px 18px 24px;
+    border-radius: 55px;
+    display: flex;
+    align-items: center;
+    border:none;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 700;
+    gap:25px;
+    margin-top: 32px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:1200px) and (max-width:1300px){
+    .content-banner .title{
+        font-size: 62px;
+    }
+    .video_info .video-container h2{
+        font-size: 50px;
+    }
+    .beneficial-elements .benefits{
+        width: 85%;
+    }
+    .bridges-content h2{
+        font-size: 45px;
+    }
+}
 
 @media screen and (min-width:993px) and (max-width:1199px) {
     .partners-section .partner-logos {
@@ -301,6 +356,7 @@ body {
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    
 }
 
 @media screen and (min-width:360px) and (max-width:992px) {
@@ -424,5 +480,35 @@ body {
     }
     .beneficial-elements .benefits .elements p{
         font-size: 14px;
+    }
+    .building-bridges{
+        flex-direction: column;
+    }
+    .building-bridges .bridges-image{
+        order:2;
+        width: 100%;
+    }
+    .building-bridges .bridges-image img{
+        width: 100%;
+    }
+    .building-bridges .bridges-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap:16px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding:20px;
+    }
+    .building-bridges .bridges-content h2{
+        font-size: 30px;
+        padding-bottom: 0;
+    }
+    .building-bridges .bridges-content p{
+        font-size: 14px;
+    }
+    .reports{
+        margin-top: 0;
     }
 }
