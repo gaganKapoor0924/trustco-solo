@@ -840,7 +840,180 @@ body {
     font-size: 16px;
     font-weight: 500;
 }
+.contact-section{
+    background: white;
+    width: 100%;
+    padding:100px 0;
+    display: flex;
+    justify-content: center;
+}
+.contact-section .contact-form{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.contact-section .contact-form h2{
+    font-size: 64px;
+    font-weight: 800;
+}
+.contact-section .contact-form p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-top: 16px;
+    color:#12141D;
+}
+.contact-section .contact-form p span{
+    display: block;
+}
+.contact-section .contact-form form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:40px;
+    margin-top: 32px;
+}
+.contact-section .contact-form form .field{
+    width:48%;
+    border:1px solid #91A7B0;
+    padding:12px;
+    display: flex;
+    align-items: center;
+    gap:9px;
+    border-radius: 10px;
 
+
+}
+.contact-section .contact-form form .field input{
+    border:none;
+    font-size: 16px;
+    font-weight: 400;
+    color:#91A7B0;
+    padding:12px;
+    width:100%;
+}
+.contact-section .contact-form form .field input:focus{
+    outline: none;
+}
+.contact-section .contact-form form .message{
+    width: 100%;
+}
+.contact-section .contact-form form .message textarea{
+    width:100%;
+    border-color: #91A7B0;
+    padding:12px;
+    font-size: 16px;
+    color:#91A7B0;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 150px;
+    resize: none;
+}
+.contact-section .contact-form form .message textarea:focus{
+    outline: none;
+}
+.agree{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.agree-text{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.action-btn .submit{background: #043A53;
+padding: 15px 50px;
+border-radius: 55px;
+display: flex;
+align-items: center;
+border: none;
+color: #fff;
+font-size: 18px;
+font-weight: 700;
+gap: 25px;
+margin-top: 32px;
+cursor: pointer;
+}
+.help-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 93px 0;
+}
+.help-section .help{
+    width:75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.help h2.help-text{
+    font-size: 80px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.help p.contact-text{
+    font-size: 20px;
+    font-weight: 500;
+    color:#12141D;
+    text-align: center;
+    line-height: 1.5;
+}
+.help p span{
+    display: block;
+}
+.features ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap:32px;
+    margin-top: 32px;
+}
+.features ul li{
+    flex:1;
+}
+.features ul li .card-box{
+    background: #fff;
+    padding:24px;
+    border-radius: 16px;
+}
+.features ul li .card-box img{
+    width:64px;
+    margin-bottom: 32px;
+}
+.features ul li .card-box h2{
+    font-size: 24px;
+    color:#12141D;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.features ul li .card-box p{
+    font-size: 18px;
+    font-weight: 400;
+    color:#404040;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+.email-link{
+    color:#043A53;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.email-link span{
+    width: 24px;
+}
+.card-box .email-link span .email-arrow{
+    width: 100%;
+    margin-bottom: 0;
+    
+}
 @media screen and (min-width:1200px) and (max-width:1300px) {
     .content-banner .title {
         font-size: 62px;
@@ -1323,5 +1496,44 @@ body {
         padding:0 20px;
         flex-direction: column;
         gap:32px;
+    }
+    .contact-section{
+        padding:50px 0;
+    }
+    .contact-section .contact-form{
+        width:100%;
+        padding:0 20px;
+    }
+    .contact-section .contact-form h2{
+        font-size: 32px;
+    }
+    .contact-section .contact-form p{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .contact-section .contact-form form{
+        gap:32px;
+    }
+    .contact-section .contact-form form .field{
+        width: 100%;
+    }
+    .agree{
+        flex-direction: column;
+    }
+    .help-section {
+        padding:50px 0;
+    }
+    .help-section .help{
+        width:100%;
+        padding:0 20px;
+    }
+    .help-section .help h2.help-text{
+        font-size: 32px;
+    }
+    .help-section .help p.contact-text{
+        font-size: 16px;
+    }
+    .features ul{
+        flex-direction: column;
     }
 }
